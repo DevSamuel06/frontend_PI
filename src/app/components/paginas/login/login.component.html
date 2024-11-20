@@ -1,0 +1,20 @@
+<main>
+  <app-navbar></app-navbar>
+  <div class="container">
+    <h1>Login</h1>
+    <h6>Área destinada a professores e coordenadores da Fatec Franca cadastrarem as vagas</h6>
+    <!-- Na entega do PI não temos acesso as informações da Fatec que seria a logica do professor entrar para cadastrar as vagas, por isso comentei esta parte -->
+    <!-- <form (ngSubmit)="validaLogin()"> -->
+      <form action="">
+      <label for="username">Username:</label>
+      <input type="text" id="username" [(ngModel)]="user.username" name="username" required>
+      
+      <label for="password">Password:</label>
+      <input type="password" id="password" [(ngModel)]="user.password" name="password" required>
+      
+      <button  routerLink="/cadastro">Login</button>
+    </form>
+  </div>
+  
+  <img [src]="cyber">
+</main>
